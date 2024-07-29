@@ -35,5 +35,34 @@ def determine_grade():
         print("F")
 
 
+# Define a function to add two numbers and print the result.
+def add(a, b):
+    """
+    Prints the sum of two numbers.
+
+    Parameters:
+    a (int or float): The first number.
+    b (int or float): The second number.
+    """
+    return a + b
+
+
+def fahrenheit_to_celsius(fahrenheit):
+    """
+    Converts a temperature from Fahrenheit to Celsius.
+
+    Parameters:
+    fahrenheit (float): The temperature in Fahrenheit.
+
+    Returns:
+    float: The temperature in Celsius.
+    """
+    return (fahrenheit - 32) * 5.0/9.0
+
+
 # Call the function to determine the grade.
 determine_grade()
+
+print(add(5, 10))
+
+print(fahrenheit_to_celsius(100))
