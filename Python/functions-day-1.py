@@ -60,7 +60,7 @@ def fahrenheit_to_celsius(fahrenheit):
     return (fahrenheit - 32) * 5.0 / 9.0
 
 
-def settings(sound = 100, graphics = "high", text_size = 13):
+def settings(sound=100, graphics="high", text_size=13):
     print(f"Sound: {sound}")
     print(f"Graphics: {graphics}")
     print(f"Text Size: {text_size}")
@@ -74,4 +74,3 @@ print(add(5, 10))
 print(fahrenheit_to_celsius(100))
 
 settings(sound=50, graphics="medium", text_size=12)
-
