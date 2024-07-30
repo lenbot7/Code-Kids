@@ -4,7 +4,7 @@ Day 1
 Lenny
 """
 
-# This script prints "Hello, World!" to the console and defines a function to determine a grade based on user input.
+# This script prints "Hello, World!" to the console, defines functions to determine a grade based on user input, add two numbers, convert Fahrenheit to Celsius, set settings, and add multiple numbers.
 
 print("Hello, World!")
 
@@ -38,15 +38,19 @@ def determine_grade():
 # Define a function to add two numbers and print the result.
 def add(a, b):
     """
-    Prints the sum of two numbers.
+    Returns the sum of two numbers.
 
     Parameters:
     a (int or float): The first number.
     b (int or float): The second number.
+
+    Returns:
+    int or float: The sum of the two numbers.
     """
     return a + b
 
 
+# Define a function to convert Fahrenheit to Celsius.
 def fahrenheit_to_celsius(fahrenheit):
     """
     Converts a temperature from Fahrenheit to Celsius.
@@ -60,17 +64,43 @@ def fahrenheit_to_celsius(fahrenheit):
     return (fahrenheit - 32) * 5.0 / 9.0
 
 
+# Define a function to set and print settings.
 def settings(sound=100, graphics="high", text_size=13):
+    """
+    Prints the settings for sound, graphics, and text size.
+
+    Parameters:
+    sound (int): The sound level (default is 100).
+    graphics (str): The graphics quality (default is "high").
+    text_size (int): The text size (default is 13).
+    """
     print(f"Sound: {sound}")
     print(f"Graphics: {graphics}")
     print(f"Text Size: {text_size}")
 
 
+# Define a function to add multiple numbers.
+def full_add(*args):
+    """
+    Returns the sum of all provided arguments.
+
+    Parameters:
+    *args (int or float): A variable number of arguments to be summed.
+
+    Returns:
+    int or float: The sum of all provided arguments.
+    """
+    return sum(args)
+
+
 # Call the function to determine the grade.
 determine_grade()
 
+# Print the result of adding two numbers.
 print(add(5, 10))
 
+# Print the result of converting 100 Fahrenheit to Celsius.
 print(fahrenheit_to_celsius(100))
 
+# Call the settings function with custom values.
 settings(sound=50, graphics="medium", text_size=12)
