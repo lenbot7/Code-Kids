@@ -38,7 +38,7 @@ class Person:
         self.address = address
 
 
-goose = Pet("Goose", "Cat", "Tabby",3, "Male")
+goose = Pet("Goose", "Cat", "Tabby", 3, "Male")
 pip = Pet("Pip", "Dog", "Unknown", 1, "Male")
 home = Address("High Street", 1, "AB1 2CD", "London")
 lenny = Person("Lenny", "Kay", 30, home)
