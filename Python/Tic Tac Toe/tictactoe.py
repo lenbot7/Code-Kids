@@ -115,6 +115,7 @@ class Player:
             print("Invalid move. Try again.")
             return False
 
+
 # Initialize the Tic Tac Toe board and players.
 tictactoe = Board()
 p1 = Player(input("Player 1, What is your name: "), "X")
