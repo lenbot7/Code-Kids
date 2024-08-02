@@ -1,7 +1,7 @@
 """
 Tic Tac Toe Project
 Lenny
-Day 3 and 4
+Day 3
 """
 
 
