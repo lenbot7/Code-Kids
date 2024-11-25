@@ -38,5 +38,10 @@ def guess_my_number():
     print(f"You guessed it in {attempts} attempts!")
 
 
-countdown()
-guess_my_number()
+def main():
+    countdown()
+    guess_my_number()
+
+
+if __name__ == "__main__":
+    main()

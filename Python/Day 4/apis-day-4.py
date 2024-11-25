@@ -19,9 +19,6 @@ def get_random_joke():
     return joke["setup"] + " " + joke["punchline"]
 
 
-print(get_random_joke())
-
-
 def calculator():
     try:
         n1 = float(input("Enter the first number: "))
@@ -44,4 +41,10 @@ def calculator():
         return "Invalid operation"
 
 
-print(calculator())
+def main():
+    print(get_random_joke())
+    print(calculator())
+
+
+if __name__ == "__main__":
+    main()

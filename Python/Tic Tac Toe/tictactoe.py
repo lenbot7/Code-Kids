@@ -116,25 +116,30 @@ class Player:
             return False
 
 
-# Initialize the Tic Tac Toe board and players.
-tictactoe = Board()
-p1 = Player(input("Player 1, What is your name: "), "X")
-p2 = Player(input("Player 2, what is your name: "), "O")
-print(f"Welcome to Tic Tac Toe!\n{p1.name} is {p1.symbol} and {p2.name} is {p2.symbol}")
+def main():
+    # Initialize the Tic Tac Toe board and players.
+    tictactoe = Board()
+    p1 = Player(input("Player 1, What is your name: "), "X")
+    p2 = Player(input("Player 2, what is your name: "), "O")
+    print(f"Welcome to Tic Tac Toe!\n{p1.name} is {p1.symbol} and {p2.name} is {p2.symbol}")
 
-# Display the initial state of the board.
-current_player = p1
-tictactoe.display()
-
-# Main game loop.
-while True:
-    while not current_player.play(tictactoe):
-        pass
+    # Display the initial state of the board.
+    current_player = p1
     tictactoe.display()
-    if tictactoe.check_win():
-        print(f"{current_player.name} wins!")
-        break
-    if all([x != " " for row in tictactoe.board for x in row]):
-        print("It's a tie!")
-        break
-    current_player = p2 if current_player == p1 else p1
+
+    # Main game loop.
+    while True:
+        while not current_player.play(tictactoe):
+            pass
+        tictactoe.display()
+        if tictactoe.check_win():
+            print(f"{current_player.name} wins!")
+            break
+        if all([x != " " for row in tictactoe.board for x in row]):
+            print("It's a tie!")
+            break
+        current_player = p2 if current_player == p1 else p1
+
+
+if __name__ == "__main__":
+    main()

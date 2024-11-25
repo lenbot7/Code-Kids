@@ -93,14 +93,19 @@ def full_add(*args):
     return sum(args)
 
 
-# Call the function to determine the grade.
-determine_grade()
+def main():
+    # Call the function to determine the grade.
+    determine_grade()
 
-# Print the result of adding two numbers.
-print(add(5, 10))
+    # Print the result of adding two numbers.
+    print(add(5, 10))
 
-# Print the result of converting 100 Fahrenheit to Celsius.
-print(fahrenheit_to_celsius(100))
+    # Print the result of converting 100 Fahrenheit to Celsius.
+    print(fahrenheit_to_celsius(100))
 
-# Call the settings function with custom values.
-settings(sound=50, graphics="medium", text_size=12)
+    # Call the settings function with custom values.
+    settings(sound=50, graphics="medium", text_size=12)
+
+
+if __name__ == "__main__":
+    main()
